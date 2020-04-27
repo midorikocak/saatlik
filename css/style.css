@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Raleway:wght@500;600&display=swap');
+
+
+html{
+	font-size: 16px;
+}
+
+body {
+	color: #555555;
+	background-color: #ffffff;
+	font-family: 'Raleway', sans-serif;	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	min-height: 100vh;
+	/* Pencere uzunluğu */
+	height: 100%;
+}
+
+/* Ödev olarak */
+*{
+	box-sizing: border-box;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+
+	flex: 4;
+	padding: 16px;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	text-align: center;
+
+	padding: 16px;
+	flex: 1;
+
+	background-color: #edf6fc;
+
+	margin-right: 16px;
+}
+
+
+h1, h2, h2, h3, h4, h5, h6 {
+	color: #33333;
+	font-family: 'Playfair Display', serif;
+} 
+
+b{
+	color: #33333;
+}
+
+header h1{
+	font-size: 24px;
+	font-weight: 600;
+	margin:0;
+}
+
+header h2{
+	font-size: 16px;
+	font-weight: lighter;
+	margin: 0;
+}
+
+header img{
+	width: 75px;
+	border-radius: 50%;
+}
+
+header ul{
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+}
+
+#info{
+	margin-top: 64px;
+}
+
+#yetenekler ul{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 8px;
+}
+
+#yetenekler ul li{
+	white-space: nowrap;
+	background-color: #3680e3;
+	color: #fff;
+	font-size: 16px;
+	padding: 8px;
+	margin: 4px;
+	border-radius: 4px;
+}
+
+header button{
+	background-color: #f95466;
+	border:none;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 4px;
+	padding: 16px;
+	margin: 16px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 auto;
+}
+
+.social ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.social ul li:not(:first-child){
+	margin-left: 16px;
+}
+
+.social a{
+	font-size: 24px;
+	color: #333;
+}
+
+#headerNav {
+	border-bottom: 1px solid #555;
+}
+
+#headerNav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 16px;
+	margin:0;
+}
+
+#headerNav ul li{
+	margin-left: 16px;
+	margin-bottom:0;
+}
+
+#headerNav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+	color: #333;
+}
+
+li{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+}
+
+
+
+
+.portfolio{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-rows: 1fr;
+	/*grid-template-columns: 1fr 2fr 0.5fr 2fr;*/
+	/*grid-template-rows: 1fr 2fr 1fr;*/
+	grid-gap: 16px;
+}
+
+.portfolio img{
+	width:100%;
+	height:250px;
+	object-fit: cover;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+.work{
+	display: flex;
+	flex-direction: row;
+}
+
+.images{
+	flex:2;
+	padding-right: 16px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.info{
+	flex:1;
+	padding: 1rem;
+}
+
+.images img{
+	width:80%;
+	box-shadow: 0px 1rem 2rem rgba(0,0,0,0.4);
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	width: 50ch;
+}
+
+label{
+	font-weight: bold;
+}
+
+input, textarea{
+	padding: 1rem;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	max-width: 35ch;
+	border: 1px solid #b3b3b3;
+}
+
+button{
+	border: none;
+	width: fit-content;
+	display: block;
+	background-color: #333695;
+	color: #ffffff;
+	padding: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.form-group{
+	display: flex;
+	flex-direction: column;
+	width: 50ch;
+	margin-bottom: 1rem;
+	align-items: flex-start;
+}
+
+.slider{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0%, 0%, 0%, 0.8);
+	color: white;
+	font-size: 32px;
+}
+
+.slider i{
+	cursor: pointer;
+} 
+
+
+.slider img{
+	width: 80vw;
+	margin:1rem;
+}
+
+#close{
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.content {
+		flex-direction: column;
+	}
+
+	header{
+		margin-right: 0;
+	}
+}

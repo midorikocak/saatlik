@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<title>Midori Koçak</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
+</head>
+
+<body>
+
+	<div class="content">
+		<main>
+			<h1>Saatlik Ücret Hesaplama</h1>
+			<p>Freelancer'lar için saatlik ücret hesaplama aracı</p>
+			<form>
+				<div class="form-group">
+					<label for="maas">Aylık bir şirketten almayı istediğim maaş (TL Giriniz)</label>
+					<input type="text" name="maas" id="maas" placeholder="Sayı giriniz">
+				</div>
+				<div class="form-group">
+					<label for="saatlik">Saatlik Ücret (Maaşa göre 2,95 kat maliyet olmak zorunda. Sigorta vs. maliyetler)</label>
+					<input type="text" name="saatlik" id="saatlik" placeholder="Hesaplanıyor">
+				</div>
+				<div class="form-group">
+					<label for="toplamSaat">Toplam Saat</label>
+					<input type="text" name="toplamSaat" id="toplamSaat" placeholder="Saat Giriniz">
+				</div>
+				<div class="form-group">
+					<label for="toplamMaliyet">Toplam Maliyet</label>
+					<input type="text" name="toplamMaliyet" id="toplamMaliyet" placeholder="Maliyet">
+				</div>
+				<button id="hesapla">Hesapla</button>
+			</form>
+		</main>
+	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
