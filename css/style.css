@@ -20,6 +20,8 @@ body {
 	height: 100%;
 }
 
+
+
 /* Ödev olarak */
 *{
 	box-sizing: border-box;
@@ -286,5 +288,10 @@ button{
 
 	header{
 		margin-right: 0;
+	}
+	
+	main{
+		max-width: 100%;
+		width: 100%;
 	}
 }
