@@ -216,7 +216,9 @@ label{
 	font-weight: bold;
 }
 
-input, textarea{
+input, textarea, input:disabled{
+	color: #555 !important;
+	background-color: #fff !important;
 	padding: 1rem;
 	font-size: 1rem;
 	margin-top: 0.5rem;
